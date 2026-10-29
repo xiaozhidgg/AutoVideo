@@ -80,3 +80,11 @@ AutoVideo/
 ├── tools/make-icons.ps1  # 图标生成脚本（重新生成用）
 └── DEVELOPER.md       # 开发者文档（架构、消息协议、扩展指南、版本管理约定）
 ```
+
+## 许可证
+
+本项目基于 [MIT License](LICENSE) 开源，Copyright (c) 2026 xiaozhidgg。
+
+## 下载
+
+不想自己打包的话，可以直接到 [Releases](https://github.com/xiaozhidgg/AutoVideo/releases) 下载 `AutoVideo-<版本号>.zip`，解压后按上面的「安装」步骤加载解压缩的扩展即可。
