@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">▶</div>
+    <div class="title-wrap">
+      <h1>AutoVideo 自动刷视频</h1>
+      <div id="platform" class="platform">检测中…</div>
+    </div>
+  </header>
+
+  <div id="unsupported" class="unsupported hidden">
+    当前页面暂不支持。请在 <b>抖音 / 快手 / TikTok / Instagram / Facebook</b> 的页面上使用本插件。
+  </div>
+
+  <button id="toggle" class="toggle" disabled>▶ 开始自动刷</button>
+  <div id="status" class="status">—</div>
+  <div id="stats" class="stats">本次已刷 0 个视频</div>
+
+  <section class="controls">
+    <div class="row">
+      <label for="interval">每个视频停留 <span id="intervalVal">15</span> 秒</label>
+      <input type="range" id="interval" min="3" max="120" step="1" value="15" />
+    </div>
+    <label class="check"><input type="checkbox" id="mute" /> 静音播放</label>
+    <label class="check"><input type="checkbox" id="advanceOnEnd" /> 视频播完立即切换</label>
+    <label class="check"><input type="checkbox" id="jitter" /> 随机间隔（更像真人浏览）</label>
+    <label class="check"><input type="checkbox" id="floating" /> 网页悬浮条（置顶状态面板）</label>
+  </section>
+
+  <footer>
+    <div class="shortcut">快捷键 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> 快速开关</div>
+    <div class="credit" id="version">—</div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
